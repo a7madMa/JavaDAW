@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 9</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        /*Apuntar esto en los apuntes*/
+        /*Aplicamos un sombreado verde a todas las filas que ocupan una posición par (even)
+        También podemos aplicarlo a las filas impares (odd)*/
+        tr:nth-child(even) {
+            background-color: rgb(66, 203, 252);
+        }
+
+        td {
+            width: 40px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Estilos distintos en filas pares o impares</h1>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+        </tr>
+    </table>
+</body>
+
+</html>

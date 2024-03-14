@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 8</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 3px solid blue;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tablas con celdas unidas</h1>
+    <table>
+        <tr>
+            <th>Profesor</th>
+            <th>Asignatura</th>
+            <th>Ciclo</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Carlos</td>
+            <td>Programación</td>
+            <td rowspan="4">DAW</td>
+        </tr>
+        <tr>
+            <td>Lenguajes</td>
+
+        </tr>
+        <tr>
+            <td rowspan="2">David</td>
+            <td>Base de datos</td>
+
+        <tr>
+
+            <td>Sistemas informáticos</td>
+
+        </tr>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

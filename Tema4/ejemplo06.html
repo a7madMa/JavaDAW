@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 6</title>
+    <style>
+        table, th, td{
+            border: 1px solid rgb(0, 183, 255);
+            border-collapse: collapse;
+        }
+
+        th, td{
+            /* Funciona como un reloj las 5 son las 12 20, las 3, 8, las 6 y  5 las 9*/
+            /*Aplicamos 5px de padding a la parte superior e 8 pxen la parte inferior y 5px a la izquierda y 20px a la derecha*/
+            /*Aplicamos 5px de padding*/
+            padding: 5px; 
+            text-align: center; 
+        }
+
+        .col-ancha{
+            width: 200px;
+        }
+
+        .fila-alta{
+            height: 40px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Tablas</h1>
+
+    <table>
+        <tr class="fila-alta">
+            <th class="col-ancha">Nombre</th>
+            <th>Raza</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Paul</td>
+            <td>Pulpo</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Mino</td>
+            <td>Gato</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Piolín</td>
+            <td>Agaporni</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

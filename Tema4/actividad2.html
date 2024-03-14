@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+
+    <style>
+        fieldset{
+            width: 350px;
+        }
+
+        .comentarios {
+            width: 300px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de Inscripción</h1> <br>
+    Rellena el siguente formulario de inscripción. <br><br>
+
+    <form action="/encuesta.php" method="get" target="_blank" autocomplete="off">
+
+        <fieldset>
+
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre</label> <br>
+            <input type="text" name="nombre" id="nombre"> <br> <br>
+
+            <label for="apellidos">Apellidos</label> <br>
+            <input type="text" name="apellidos" id="apellidos"> <br> <br>
+
+            <label for="fecha_nacimiento">Fecha de nacimiento</label> <br>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento"> <br><br>
+
+            Estado Civil <br>
+            <input type="radio" name="estado_civil" id="soltero" value="soltero" checked>
+            <label for="soltero">Soltero</label> <br>
+
+            <input type="radio" name="estado_civil" id="casado" value="casado">
+            <label for="casado">Casado</label> <br>
+
+            <label for="direccion">Dirección</label> <br>
+            <input type="text" name="direccion" id="direccion"> <br><br>
+
+            <label for="isla">Isla</label><br>
+            <select name="isla" id="isla">
+                <option value="" selected disabled>Isla</option>
+                <option value="mallorca">Mallorca</option>
+                <option value="menorca">Menorca</option>
+                <option value="ibiza">Ibiza</option>
+                <option value="formentera">Formentera</option>
+            </select> <br> <br>
+
+            <label for="elegir_color">Color preferido</label> <br>
+            <input type="color" name="elegir_color" id="elegir_color">
+
+        </fieldset>
+
+        <br> <br>
+        <fieldset>
+            <legend>Contacto</legend>
+
+            <label for="email">Correo electrónico</label> <br>
+            <input type="email" name="email" id="email"> <br> <br>
+
+            <label for="password">Contraseña</label> <br>
+            <input type="password" name="password" id="password"> <br> <br>
+
+            <input type="checkbox" name="publi" id="publi" value="publi" checked>
+            <label for="publi">Deseo recibir publicidad</label> <br>
+
+            <input type="checkbox" name="terminos" id="terminos" value="terminos" checked>
+            <label for="terminos">Acepto los términos</label> <br>
+
+            <label for="comentarios">Comentarios finales</label> <br>
+            <textarea class="comentarios" name="comentarios" id="comentarios" 
+                placeholder="Escribe aquí cualquier observación que se te ocurra"></textarea>
+
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+
+    </form>
+
+
+</body>
+
+</html>

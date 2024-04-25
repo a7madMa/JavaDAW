@@ -85,7 +85,7 @@ public class Libreta {
 
 				if (linea.length() >= 7) {
 					titulo = linea.substring(7);
-				}else {
+				} else {
 					return;
 				}
 
@@ -129,6 +129,19 @@ public class Libreta {
 		 * que se guardarán debe ser el que aparece en el enunciado de la práctica. Si
 		 * se produce una excepción, se mostrará el error que aparece en el enunciado.
 		 */
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(NOMBRE_ARCHIVO))) {
+			for (int i = 0; i < numNotas; i++) {
+				bw.write(notas[i].getTitulo());
+				bw.newLine();
+				bw.write(notas[i].getDescripcion());
+				bw.newLine();
+			}
+			JOptionPane.showMessageDialog(null, "Notas guardadas exitosamente.", "Guardado",
+					JOptionPane.INFORMATION_MESSAGE);
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(null, "No se ha podido guardar el archivo de tareas " + e.getMessage(),
+					"Error de E/S", JOptionPane.ERROR_MESSAGE);
+		}
 
 	}
 

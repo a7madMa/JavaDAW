@@ -1,0 +1,2 @@
+TITULO=Compra de la semana
+DESCRIPCION=Comprar el plutonio para el condensador de fluzo

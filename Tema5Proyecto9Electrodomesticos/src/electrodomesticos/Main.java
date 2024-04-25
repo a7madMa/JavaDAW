@@ -1,5 +1,12 @@
 package electrodomesticos;
 
+/**
+ * Método en el cual se prueban todos los otros métodos de las otras clases
+ * 
+ * @version 1-2024
+ * @author ahmad since 15-04-2024
+ */
+
 public class Main {
 
 	public static void main(String[] args) {

@@ -1,5 +1,10 @@
 package Electrodomesitcos;
 
+/**
+ * 
+ * 
+ */
+
 public class Lavadora {
 
 	private int id;

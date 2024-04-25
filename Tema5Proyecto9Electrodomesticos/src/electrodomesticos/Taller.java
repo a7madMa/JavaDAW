@@ -6,13 +6,16 @@ import java.util.Iterator;
  * Este clase consta de un taller de lavadoras donde podremos ver listado de las
  * lavadoras,añadirlas, borrarlas y buscarlas
  * 
- * @author ahmad
+ * @version 1-2024
+ * @author Ahmad since 15-04-2024
+ * 
  * 
  */
+
 public class Taller {
 
-	private final int MAX_LAVADORAS = 20;
-	private Lavadora lavadoras[] = new Lavadora[20];
+	private final int MAX_LAVADORAS = 20; // Número máximo de lavadoras del taller
+	private Lavadora lavadoras[] = new Lavadora[20]; // Array de Lavadora
 
 	/**
 	 * Método que nos muestra el listado de las lavadoras que se encuentran en stock

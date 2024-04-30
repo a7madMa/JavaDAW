@@ -40,10 +40,10 @@ public class Libro {
 		System.out.print("Año actual: ");
 		anyo = entrada.nextInt();
 
-		Libro libro1 = new Libro(titulo, isbn, autor1);
-		Libro.setAnyoActual(anyo);
-
-		System.out.println("\nDatos del libro: \n" + libro1.toString());
+//		Libro libro1 = new Libro(titulo, isbn, autor1);
+//		Libro.setAnyoActual(anyo);
+//
+//		System.out.println("\nDatos del libro: \n" + libro1.toString());
 
 	}
 

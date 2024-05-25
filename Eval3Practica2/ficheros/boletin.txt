@@ -1,0 +1,11 @@
+asignatura=sfs
+fecha=2024-05-25
+
+nombre=Fernández Rodríguez, David 
+nota=-1
+nombre=Pérez Martín, Laura
+nota=-1
+nombre=Miralles López, Begoña
+nota=-1
+nombre=Rodríguez Muñoz, Elisabeth
+nota=-1

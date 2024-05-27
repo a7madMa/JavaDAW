@@ -44,7 +44,7 @@ import javax.swing.border.EmptyBorder;
 public class Principal extends JFrame {
 
 	private final String RUTA_ARCHIVO = "ficheros/alumnos.txt";
-	private final String rutaArchivo = "ficheros/boletin.txt";
+	private final String RUTA_GUARDADO = "ficheros/boletin.txt";
 	private List<Alumno> alumnos;
 
 	private static final long serialVersionUID = 1L;
@@ -121,7 +121,7 @@ public class Principal extends JFrame {
 		btnGuardar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				guardarBoletin(rutaArchivo);
+				guardarBoletin(RUTA_GUARDADO);
 
 			}
 		});
@@ -196,7 +196,7 @@ public class Principal extends JFrame {
 	 * Guarda la lista de alumnos en un archivo rutaArchivo.
 	 */
 	public void guardarAlumnos() {
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(rutaArchivo))) {
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(RUTA_GUARDADO))) {
 			for (Alumno alumno : alumnos) {
 				bw.write(alumno.getNombre() + "," + alumno.getNota());
 				bw.newLine();
@@ -237,6 +237,8 @@ public class Principal extends JFrame {
 	 * @param rutaArchivo la ruta del archivo donde se guardará el boletín
 	 */
 	public void guardarBoletin(String rutaArchivo) {
+
+		rutaArchivo = RUTA_GUARDADO;
 
 		if (txtAsignatura.getText().isEmpty() || alumnos.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "No hay datos para guardar", "Error", JOptionPane.ERROR_MESSAGE);

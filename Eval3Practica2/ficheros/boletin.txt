@@ -1,11 +1,11 @@
-asignatura=sfs
-fecha=2024-05-25
+asignatura=Lenguaje de Marcas
+fecha=2024-05-27
 
 nombre=Fernández Rodríguez, David 
-nota=-1
+nota=4
 nombre=Pérez Martín, Laura
-nota=-1
+nota=5
 nombre=Miralles López, Begoña
-nota=-1
+nota=6
 nombre=Rodríguez Muñoz, Elisabeth
-nota=-1
+nota=9
